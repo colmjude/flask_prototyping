@@ -36,7 +36,16 @@ information regarding the template.
 
 {% endblock %}
 
-{% block inside_header %}
+<!-- example of how you add propositional heading -->
+{% block header_class %}with-proposition{% endblock %}
+{% block proposition_header %}
+<div class='header-proposition'>
+  <div class='content'>
+    <nav id='proposition-menu'>
+      <a href='/' id='proposition-name'>Example Service</a>
+    </nav>
+  </div>
+</div>
 {% endblock %}
 
 {% block body_end %}
