@@ -31,6 +31,7 @@ Next up install Flask and Flask-assets with the commands
 ```
 flask/bin/pip install flask
 flask/bin/pip install flask-assets
+flask/bin/pip install gunicorn
 ```
 
 Also run this so that ruby sass is installed
