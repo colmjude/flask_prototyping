@@ -2,6 +2,12 @@
 
 A simple flask prototyping tool.
 
+### Dependencies
+
+* Python 2.7
+* Ruby 2.1.3+
+* Sass 3.3.9+
+
 ### Building blocks
 
 At the core it is a flask app so for those with python skills and if you are that way inclined you can add and extend to your heart's content.
@@ -25,6 +31,12 @@ Next up install Flask and Flask-assets with the commands
 ```
 flask/bin/pip install flask
 flask/bin/pip install flask-assets
+```
+
+Also run this so that ruby sass is installed
+
+```
+bundle install
 ```
 
 And finally to run use the command
