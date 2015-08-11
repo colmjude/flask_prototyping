@@ -25,6 +25,9 @@ information regarding the template.
 
 {% block head %}
 
+  <!-- use compiled govuk.css from the template -->
+  <link rel="stylesheet" href="/static/govuk_template/assets/stylesheets/govuk-template.css">
+
   {# for bundle definitions, see assets.py #}
 
   {% assets "css_govuk" %}
