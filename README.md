@@ -47,4 +47,20 @@ And finally to run use the command
 
 Visit `http://127.0.0.1:5000/` to see the results
 
+### Deploying to Heroku
+
+For basic heroku instructions [see here](https://github.com/alphagov/govuk_prototype_kit/wiki/Deploying-(getting-your-work-online\))
+
+There are a couple of additional steps required to deploy this project.
+
+Because it is a python app that also requires ruby to compile the .scss files it needs multiple buildpacks. Luckily someone has made this easy for us, we just need to use the [heroku-buildpack-multi](https://github.com/ddollar/heroku-buildpack-multi)
+
+Add a `.buildpack` file containing the 2 buildpacks
+
+And then let Heroku know we are using this. We do that by entering this on the commandline
+
+```
+heroku buildpacks:set https://github.com/ddollar/heroku-buildpack-multi.git
+```
+
 
