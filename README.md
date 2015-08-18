@@ -40,13 +40,20 @@ Also run this so that ruby sass is installed
 bundle install
 ```
 
+If you are using virtualenv then `activate` that by entering:
+
+```
+source flask/bin/activate
+```
+
 And finally to run use the command
 
 ```
-./run.py
+foreman start
 ```
 
-Visit `http://127.0.0.1:5000/` to see the results
+Follow the instructions to view it in the browser
+
 
 ### Deploying to Heroku
 
