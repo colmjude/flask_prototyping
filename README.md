@@ -57,7 +57,7 @@ Follow the instructions to view it in the browser
 
 ### Deploying to Heroku
 
-For basic heroku instructions [see here](https://github.com/alphagov/govuk_prototype_kit/wiki/Deploying-(getting-your-work-online\))
+For basic heroku instructions [see here](https://github.com/alphagov/govuk_prototype_kit/blob/master/docs/deploying.md)
 
 There are a couple of additional steps required to deploy this project.
 
