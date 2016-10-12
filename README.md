@@ -1,18 +1,11 @@
 # flask_prototyping
 
-A simple flask prototyping tool.
+A simple Python flask prototyping tool.
 
-### Dependencies
-
-* Python 2.7
-* Ruby 2.1.3+
-* Sass 3.3.9+
 
 ### Building blocks
 
-At the core it is a flask app so for those with python skills and if you are that way inclined you can add and extend to your heart's content.
-
-For the rest of us looking to get some pages up and running quickly we can make use of the 3 govuk frontend building blocks.
+To get some pages up and running quickly it make use of the 3 GOVUK frontend building blocks.
 
 * [govuk_template](https://github.com/alphagov/govuk_template) - template containing the GOV.UK header and footer, and associated assets
 * [govuk_frontend_toolkit](https://github.com/alphagov/govuk_frontend_toolkit) - collection of Sass & JS 
@@ -20,36 +13,30 @@ For the rest of us looking to get some pages up and running quickly we can make 
 
 ### Setup
 
-I like to run things using virtualenv so the rest of my machine is kept decluttered so I always being by running
+Running in a virtualenv is advised. To create one, with Python 3, run
 
 ```
-virtualenv flask
+mkvirtualenv --python=/path/to/your/python3 <name>
 ```
 
-Next up install Flask and Flask-assets with the commands
+When returning run `workon <name>` to activate the virtualenv you just created.
+
+Then install the dependencies
 
 ```
-flask/bin/pip install flask
-flask/bin/pip install flask-assets
-flask/bin/pip install gunicorn
+pip install -r requirements.txt
 ```
 
-Also run this so that ruby sass is installed
+We then need to fetch the latest GOVUK assets.
 
 ```
-bundle install
+python manage.py install_all_govuk_assets --app-dir application
 ```
 
-If you are using virtualenv then `activate` that by entering:
+Then you should be ready to run it
 
 ```
-source flask/bin/activate
-```
-
-And finally to run use the command
-
-```
-foreman start
+python run.py
 ```
 
 Follow the instructions to view it in the browser
