@@ -27,7 +27,7 @@ Then install the dependencies
 pip install -r requirements.txt
 ```
 
-We then need to fetch the latest GOVUK assets.
+We then need to fetch the latest GOVUK assets. Requires you to have Ruby 2.2.0 or higher
 
 ```
 python manage.py install_all_govuk_assets --app-dir application
