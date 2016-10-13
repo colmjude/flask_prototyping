@@ -13,6 +13,8 @@ To get some pages up and running quickly it make use of the 3 GOVUK frontend bui
 
 ### Setup
 
+Requires you to have Ruby 2.2.0 or higher
+
 Running in a virtualenv is advised. To create one, with Python 3, run
 
 ```
@@ -25,9 +27,10 @@ Then install the dependencies
 
 ```
 pip install -r requirements.txt
+gem install bundle
 ```
 
-We then need to fetch the latest GOVUK assets. Requires you to have Ruby 2.2.0 or higher
+We then need to fetch the latest GOVUK assets
 
 ```
 python manage.py install_all_govuk_assets --app-dir application
@@ -36,7 +39,7 @@ python manage.py install_all_govuk_assets --app-dir application
 Then you should be ready to run it
 
 ```
-python run.py
+python manage.py runserver
 ```
 
 Follow the instructions to view it in the browser
